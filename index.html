@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>陈文琳 · AI 探索者</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     导航栏 — 固定顶部，全站快速跳转
+     ═══════════════════════════════════════════════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <span class="nav-logo">Portfolio ✦</span>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">首页</a></li>
+      <li><a href="#skills">能力</a></li>
+      <li><a href="#projects">项目</a></li>
+      <li><a href="#japanese">日语</a></li>
+      <li><a href="#tools">工具链</a></li>
+      <li><a href="#contact">联系</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     板块 1 ▸ Hero ——
+     个人身份、定位标语、副标题、行动按钮
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-inner">
+    <!-- 👤 头像 -->
+    <img
+      class="hero-avatar"
+      src="images/2.jpg"
+      alt="陈文琳"
+      onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'"
+    />
+    <div class="hero-avatar-emoji" style="display:none" aria-hidden="true">👤</div>
+    <div class="hero-text">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">
+        我是陈文琳
+        <span class="hero-subtitle">相信 AI 是每个人的灵魂投射</span>
+      </h1>
+      <p class="hero-tagline">
+        有 AI 工作流实战经验的日语 N1，正在转型 AI 产品经理 / 海外运营<br />
+        持续探索 AI 与内容创作的边界
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">📁 查看项目</a>
+        <a href="#contact" class="btn btn-outline">✉️ 联系我</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">N1</div>
+          <div class="stat-label">日语能力</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">CET-6</div>
+          <div class="stat-label">英语能力</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">2个</div>
+          <div class="stat-label">从0到1项目</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">10+</div>
+          <div class="stat-label">AI工具实战</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     板块 2 ▸ 核心能力 ——
+     五大核心技能展示，圆角标签均匀分布
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title fade-in">核心能力</h2>
+    <div class="divider fade-in"></div>
+    <p class="section-sub fade-in">在实战中积累的 AI 与内容创作能力</p>
+    <div class="skills-grid">
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">⚡</div>
+        <div class="skill-name">AI 工作流设计</div>
+        <p class="skill-desc">设计"脚本 → AI 生成 → 剪辑 → 复盘"标准化流程，压缩制作时间</p>
+        <div class="skill-tags">
+          <span class="tag green">豆包</span>
+          <span class="tag green">即梦</span>
+          <span class="tag blue">剪映</span>
+          <span class="tag">流程标准化</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">💬</div>
+        <div class="skill-name">Prompt 工程</div>
+        <p class="skill-desc">掌握主流 AI 工具的提示词调优方法，提升内容生成质量</p>
+        <div class="skill-tags">
+          <span class="tag purple">Prompt 调优</span>
+          <span class="tag">内容生成</span>
+          <span class="tag pink">AI 辅助创作</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">📈</div>
+        <div class="skill-name">内容增长策略</div>
+        <p class="skill-desc">从数据出发制定内容方向，优化话题标签与标题，提升曝光</p>
+        <div class="skill-tags">
+          <span class="tag pink">话题标签</span>
+          <span class="tag pink">标题优化</span>
+          <span class="tag">抖音运营</span>
+          <span class="tag blue">数据复盘</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🏷️</div>
+        <div class="skill-name">AI 数据标注</div>
+        <p class="skill-desc">制定标注规范、建立质量抽检机制与反馈闭环，输出可复用 SOP</p>
+        <div class="skill-tags">
+          <span class="tag blue">标注规范</span>
+          <span class="tag blue">质量评估</span>
+          <span class="tag green">SOP 输出</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🌏</div>
+        <div class="skill-name">日语 N1</div>
+        <p class="skill-desc">通过 JLPT N1 认证，具备日语教师与客服实战经验</p>
+        <div class="skill-tags">
+          <span class="tag">JLPT N1</span>
+          <span class="tag purple">日语教学</span>
+          <span class="tag purple">日语客服</span>
+        </div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🇬🇧</div>
+        <div class="skill-name">英语六级</div>
+        <p class="skill-desc">通过大学英语六级考试，具备英文技术文档阅读与撰写能力</p>
+        <div class="skill-tags">
+          <span class="tag">CET-6</span>
+          <span class="tag blue">技术文档</span>
+          <span class="tag green">英文撰写</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     板块 3 ▸ 项目案例 ——
+     桌面3列 / 平板2列 / 手机1列
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+    <h2 class="section-title fade-in">项目案例</h2>
+    <div class="divider fade-in"></div>
+    <p class="section-sub fade-in">三个从0到1的真实项目，验证 AI 与内容创作结合的效率</p>
+    <div class="projects-grid">
+
+      <div class="project-card fade-in">
+        <div class="project-cover cover-amber project-cover-img-wrap">
+          <img src="images/video-cover.jpg" alt="视频封面" class="project-cover-img" onerror="this.style.display='none'" />
+        </div>
+        <div class="project-body">
+          <div class="project-title">抖音 AI 视频带货工作流</div>
+          <p class="project-desc">
+            <strong>背景：</strong>个人项目，验证 AI 内容生产效率<br /><br />
+            <strong>行动：</strong>设计"脚本 → AI 生成 → 剪辑 → 复盘"标准化流程，使用豆包、即梦、剪映等工具<br /><br />
+            <strong>结果：</strong>单条视频制作时间从 1 小时压缩至 10 分钟，转化率提升 30%
+          </p>
+          <img src="images/workflow.png" alt="工作流截图" class="workflow-img" />
+          <div class="skill-tags">
+            <span class="tag">个人项目</span>
+            <span class="tag green">豆包</span>
+            <span class="tag green">即梦</span>
+            <span class="tag blue">剪映</span>
+          </div>
+          <div class="project-watch">
+            <a href="https://v.douyin.com/YET1anGHh10/" target="_blank" class="watch-btn">
+              ▶ 观看视频
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-cover cover-sage">🏷️</div>
+        <div class="project-body">
+          <div class="project-title">AI 数据标注与质量评估</div>
+          <p class="project-desc">
+            <strong>背景：</strong>参与 AI 模型训练的数据标注项目<br /><br />
+            <strong>行动：</strong>制定标注规范、建立抽检机制与反馈闭环<br /><br />
+            <strong>结果：</strong>建立了可复用的质量评估 SOP
+          </p>
+          <div class="skill-tags">
+            <span class="tag">团队项目</span>
+            <span class="tag blue">标注规范</span>
+            <span class="tag green">SOP</span>
+            <span class="tag">质量评估</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-in">
+        <div class="project-cover cover-blue">
+          <img src="images/silly-demo.png" alt="深夜小酒馆截图" class="project-cover-img" onerror="this.style.display='none'" />
+          <span style="display:none">🍷</span>
+        </div>
+        <div class="project-body">
+          <div class="project-title">SillyTavern AI 角色：深夜小酒馆</div>
+          <p class="project-desc">
+            <strong>背景：</strong>个人兴趣项目，用 SillyTavern 搭建一个可交互的 AI 角色<br /><br />
+            <strong>行动：</strong>设计人设、撰写 System Prompt、编写角色卡、持续调试<br /><br />
+            <strong>结果：</strong>完成可交互角色，总结出 Prompt 调试方法论
+          </p>
+          <div class="skill-tags">
+            <span class="tag">个人项目</span>
+            <span class="tag purple">Prompt Engineering</span>
+            <span class="tag green">角色卡设计</span>
+            <span class="tag">AI对话交互</span>
+            <span class="tag blue">SillyTavern</span>
+          </div>
+          <div class="prompt-demo">
+            <div class="prompt-label">Prompt 示例 · 四宫辉夜（傲娇大小姐）</div>
+            <div class="prompt-section">
+              <div class="prompt-role">角色定义（System Prompt）</div>
+              <pre class="prompt-code">四宫辉夜，秀知院学生会副会长，傲娇大小姐。
+性格：表面冷淡高傲，实则内心敏感。绝不会主动表白，会用各种迂回方式试探对方心意。
+口癖：「我可没有特别在意你」「真是的，明明是你自己凑过来的」
+内心独白用【】括号标注，是角色真实想法
+禁区：绝对不能主动告白</pre>
+            </div>
+            <div class="prompt-section">
+              <div class="prompt-role">用户输入</div>
+              <pre class="prompt-code prompt-user">辉夜同学，你今天好像不太一样？</pre>
+            </div>
+            <div class="prompt-section">
+              <div class="prompt-role">AI 输出</div>
+              <pre class="prompt-code prompt-ai">……哼，你才发现啊。
+【才不是今天才不一样，只是今天刚好……算了，反正你也不会懂的。】
+（别开视线，手指无意识地卷着头发）
+我可没有特别在意你怎么看我。只是……学生会的工作太多了，
+偶尔也想被人……算了，没什么。
+（轻哼一声）
+总之，给我好好完成今天的工作，否则别想我会给你好脸色看。
+【明明想让他多问几句……】</pre>
+            </div>
+            <div class="prompt-section">
+              <div class="prompt-role">设计思路说明</div>
+              <ul class="prompt-notes">
+                <li><strong>括号处理内心戏：</strong>【】包裹真实想法，区分外在表现与内心独白，增强角色层次感</li>
+                <li><strong>口癖植入：</strong>通过「」固定高傲语气，塑造角色语言特征</li>
+                <li><strong>禁区设定：</strong>明确"绝对不能主动告白"，确保角色行为一致性</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     板块 4 ▸ 日语能力 ——
+     N1 认证与实战经验
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="japanese">
+  <div class="container">
+    <h2 class="section-title fade-in">日语能力 🇯🇵</h2>
+    <div class="divider fade-in"></div>
+    <p class="section-sub fade-in">从证书到实战，日语是我连接海外市场的桥梁</p>
+    <div class="japanese-grid">
+
+      <div class="jp-card fade-in">
+        <div class="jp-level-badge">JLPT N1</div>
+        <h3>认证与能力</h3>
+        <ul class="jp-list">
+          <li>通过日本语能力测试 N1 认证</li>
+          <li>可阅读日文技术文档、新闻与商业资料</li>
+          <li>具备日语教学实战经验</li>
+          <li>日语客服沟通无障碍</li>
+        </ul>
+      </div>
+
+      <div class="jp-card fade-in">
+        <h3>实际应用场景</h3>
+        <ul class="jp-list">
+          <li>日语教学内容策划与讲授</li>
+          <li>日语客服实战（旅游/电商场景）</li>
+          <li>日语文献阅读与信息提取</li>
+          <li>海外市场内容趋势研究</li>
+          <li>日系设计风格与用户体验学习</li>
+        </ul>
+      </div>
+
+      <div class="jp-quote fade-in">
+        「継続は力なり」—— 坚持就是力量<br />
+        学无止境，用日语打开更大的世界
+        <span>持续精进，让语言成为职业发展的助力</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     板块 5 ▸ 工具链 ——
+     日常使用的 AI 与效率工具
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="tools">
+  <div class="container">
+    <h2 class="section-title fade-in">工具链</h2>
+    <div class="divider fade-in"></div>
+    <p class="section-sub fade-in">在实战中沉淀的 AI 与效率工具清单</p>
+    <div class="tools-wrapper">
+
+      <div class="tool-category fade-in">
+        <h3>AI 内容创作</h3>
+        <div class="tool-pills">
+          <span class="tool-pill"><span class="emoji">🤖</span> 豆包</span>
+          <span class="tool-pill"><span class="emoji">🎨</span> 即梦</span>
+          <span class="tool-pill"><span class="emoji">🎬</span> 剪映</span>
+          <span class="tool-pill"><span class="emoji">🤖</span> WorkBuddy</span>
+          <span class="tool-pill"><span class="emoji">💻</span> Open Code</span>
+        </div>
+      </div>
+
+      <div class="tool-category fade-in">
+        <h3>内容运营 &amp; 数据</h3>
+        <div class="tool-pills">
+          <span class="tool-pill"><span class="emoji">📊</span> Excel</span>
+          <span class="tool-pill"><span class="emoji">📝</span> Notion</span>
+          <span class="tool-pill"><span class="emoji">🎵</span> 抖音创作者中心</span>
+          <span class="tool-pill"><span class="emoji">📦</span> 抖店后台</span>
+          <span class="tool-pill"><span class="emoji">📱</span> 千川投放</span>
+          <span class="tool-pill"><span class="emoji">📉</span> 飞瓜数据</span>
+        </div>
+      </div>
+
+      <div class="tool-category fade-in">
+        <h3>开发与效率</h3>
+        <div class="tool-pills">
+          <span class="tool-pill"><span class="emoji">💻</span> VS Code</span>
+          <span class="tool-pill"><span class="emoji">🐍</span> Python</span>
+          <span class="tool-pill"><span class="emoji">📊</span> Pandas</span>
+          <span class="tool-pill"><span class="emoji">📈</span> ECharts</span>
+          <span class="tool-pill"><span class="emoji">🤖</span> ChatGPT</span>
+          <span class="tool-pill"><span class="emoji">🌐</span> DeepL</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     板块 6 ▸ 联系方式 ——
+     多渠道联系入口
+     ═══════════════════════════════════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <h2 class="section-title fade-in">联系我</h2>
+    <div class="divider fade-in"></div>
+    <p class="section-sub fade-in">无论是合作、交流还是一起探索 AI，欢迎随时联系 👋</p>
+    <div class="contact-grid">
+
+      <div class="contact-card fade-in">
+        <div class="contact-icon">📧</div>
+        <div class="contact-label">电子邮件</div>
+        <div class="contact-value">1184247196@qq.com</div>
+      </div>
+
+      <div class="contact-card fade-in">
+        <div class="contact-icon">💬</div>
+        <div class="contact-label">微信</div>
+        <div class="contact-value">A1184247196</div>
+      </div>
+
+      <div class="contact-card fade-in">
+        <div class="contact-icon">🎵</div>
+        <div class="contact-label">抖音账号</div>
+        <div class="contact-value">66718088922</div>
+      </div>
+
+      </div>
+  </div>
+</section>
+
+<!-- 页脚 -->
+<footer>
+  <p>© 2026 陈文琳 · Built with ❤️ &amp; pure HTML/CSS</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
